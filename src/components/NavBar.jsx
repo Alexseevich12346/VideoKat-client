@@ -10,7 +10,8 @@ import { observer } from 'mobx-react-lite';
 const NavBar = () => {
     const prevScrollY = useRef(0);
     const [isNavBarVisible, setIsNavBarVisible] = useState(true);
-    const {store} = useContext(Context)
+    const {store} = useContext(Context);
+    const [email, setEmail] = useState('');
      
     useEffect(() => {
         const scroll = () =>{
@@ -39,6 +40,9 @@ const NavBar = () => {
             }
         }
     }, [window.location.hash])
+    useEffect(() => {
+        setEmail(store.user.email)
+    }, [store])
     return (
         <Flex          
         align={'center'}
@@ -78,9 +82,6 @@ const NavBar = () => {
                     About
                     </button>
                 </Link>
-                <button className='headerBtn'>
-                Products
-                </button>
                 <Link to={NewsRoute}>
                 <button className='headerBtn'>
                     News
@@ -95,7 +96,7 @@ const NavBar = () => {
             <Flex>
                 {store.isAuth ? (
                 <Flex gap={3}>
-                    <div>Hello</div>              
+                    <div>{email}</div>              
                     <button  onClick={() =>store.logout}>Exit</button>       
                 </Flex>
                                 ) :(

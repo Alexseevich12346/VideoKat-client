@@ -1,16 +1,17 @@
 import '../App.css';
 import { Flex } from '@chakra-ui/react';
-import CardItem from '../components/cardItem';
-import NavBar from '../components/NavBar';
 import EmblaCarousel from '../components/Carousel/CarouselEmbla';
-import { Box } from '@chakra-ui/react';
 import ItemPage from '../images/pc.png';
+import ItemPage_two from '../images/видюха.png';
+import ItemPage_three from '../images/видюха.png';
+import ItemPage_four from '../images/видюха.png';
+import ItemPage_five from '../images/видюха.png';
 import Carousel from '../components/Carousel';
 
 
 
 const ShopPage = () =>{
-  const IMAGES = [ItemPage, ItemPage, ItemPage, ItemPage, ItemPage]; // сюда кладешь фотки
+  const IMAGES = [ItemPage, ItemPage_two, ItemPage, ItemPage, ItemPage]; // сюда кладешь фотки
   const OPTIONS = {}
   const SLIDES = IMAGES.map((src, index) => (
     <img src={src} alt={`slide ${index}`} key={index} style={{ width: '500px', height: '500px' }} />
