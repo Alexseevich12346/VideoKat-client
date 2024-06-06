@@ -1,0 +1,439 @@
+body{ 
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    background-color: #000000;
+    color: #000000;
+}
+ul{
+                
+    -webkit-text-size-adjust: 100%;
+    list-style: none;
+    display: flex;
+
+}
+.catalog__li {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    padding: 30px;
+    border: 1px solid rgba(238, 238, 238, 0.521);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .catalog__li:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    transform: translateY(-15px);
+  }
+  
+  .catalog__li-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+  }
+  
+  .catalog__li-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .catalog__li-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .catalog__li-wrapper-start {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 50px;
+  }
+  
+  .catalog__li-name {
+    font-size: 28px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .catalog__li-price {
+    font-size: 22px;
+    gap: 20px;
+    display: flex;
+  }
+  
+  .catalog__li-price-r {
+    background: no-repeat;
+    background-image: url(./png/ruble.png);
+    width: 32px;
+    height: 32px; 
+    background-size: 32px;
+    padding: 17px;
+  }
+  
+  .catalog__credit-hidd-title {
+    font-size: 18px;
+    padding: 10px;
+  }
+  
+  .catalog__credit-hidd-dl {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+  
+  .catalog__credit-hidd-dt {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px;
+  }
+  
+  .catalog__credit-hidd-dd {
+    font-size: 16px;
+    padding: 5px;
+  }
+  
+  .catalog__li-desc {
+    font-size: 18px;
+    padding: 20px;
+  }
+  
+  .catalog__structure {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: flex-start;
+  }
+  
+  .catalog__structure-dl {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .catalog__structure-dt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .catalog__structure-dd {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+  
+  .catalog__structure-title {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px;
+  }
+  
+  .catalog__structure-name {
+    font-size: 16px;
+    padding: 5px;
+  }
+  .one{
+    background-image: url(./pc/pc_one.png);
+    width: 220px;
+    height: 220px; 
+    background-size: 220px;
+  }
+  .two{
+    background-image: url(./pc/pc_two.png);
+    width: 220px;
+    height: 220px; 
+    background-size: 220px;
+  }
+  .three{
+    background-image: url(./pc/pc_three.png);
+    width: 220px;
+    height: 220px; 
+    background-size: 220px;
+  }
+  .four{
+    background-image: url(./pc/pc_four.png);
+    width: 220px;
+    height: 220px; 
+    background-size: 220px;
+  }
+  .five{
+    background-image: url(./pc/pc_five.png);
+    width: 220px;
+    height: 220px; 
+    background-size: 220px;
+  }
+  .six{
+    background-image: url(./pc/pc_six.png);
+    width: 220px;
+    height: 220px; 
+    background-size: 220px;
+  }
+  .seven{
+    background-image: url(./pc/pc_seven.png);
+    width: 220px;
+    height: 220px; 
+    background-size: 220px;
+  }
+  .eight{
+    background-image: url(./pc/pc_eight.png);
+    width: 220px;
+    height: 220px; 
+    background-size: 220px;
+  }
+  .catalog__structure-img_vga,.catalog__structure-img_cpu,.catalog__structure-img_fan,
+  .catalog__structure-img_ram,.catalog__structure-img_motherboard,.catalog__structure-img_hard,
+  .catalog__structure-img_ssd,.catalog__structure-img_power,.catalog__structure-img_box,
+  .catalog__structure-img_os
+  {
+    width: 32px;
+    height: 32px; 
+    padding: 17px;
+  }
+  .catalog__structure-img_vga{
+    background-image: url(./png/vga.png);
+  }
+  .catalog__structure-img_cpu{
+    background-image:url(./png/cpu.png);
+  }
+  .catalog__structure-img_fan{
+    background-image: url(./png/fan.png);
+  }
+  .catalog__structure-img_ram{
+    background-image: url(./png/ram.png);
+  }
+  .catalog__structure-img_motherboard{
+    background-image: url(./png/motherboard.png);
+  }
+  .catalog__structure-img_hard{
+    background-image: url(./png/hard.png);
+  }
+  .catalog__structure-img_ssd{
+    background-image: url(./png/ssd.png);
+  }
+  .catalog__structure-img_power{
+    background-image: url(./png/power.png);
+  }
+  .catalog__structure-img_box{
+    background-image: url(./png/box.png);
+  }
+  .catalog__structure-img_os{
+    background-image: url(./png/os.png);
+  }
+  *{
+    background: no-repeat;
+  }
+/* .catalog__list {
+list-style: none;
+margin: 0;
+padding: 0;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+.catalog__li {
+width: calc(33.333% - 20px);
+margin-bottom: 20px;
+background-color: #fff;
+border-radius: 5px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+overflow: hidden;
+}
+
+.catalog__li-img-box {
+width: 100%;
+height: 200px;
+overflow: hidden;
+position: relative;
+}
+
+.catalog__li-img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+position: absolute;
+top: 0;
+left: 0;
+}
+
+.catalog__li-wrapper {
+padding: 15px;
+display: flex;
+flex-direction: column;
+height: 100%;
+}
+
+.catalog__li-name {
+display: block;
+margin-bottom: 10px;
+font-size: 18px;
+font-weight: bold;
+text-overflow: ellipsis;
+white-space: nowrap;
+overflow: hidden;
+}
+
+.catalog__li-price {
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+}
+
+.catalog__li-price-r {
+margin-left: 5px;
+}
+
+.catalog__li-controll {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-top: auto;
+}
+
+.catalog__li-controll-link {
+display: block;
+width: 48%;
+height: 40px;
+line-height: 40px;
+text-align: center;
+background-color: #007bff;
+color: #fff;
+text-decoration: none;
+}
+
+.catalog__li-controll-link--buy {
+border-radius: 5px 0 0 5px;
+}
+
+.catalog__li-controll-link--more {
+border-radius: 0 5px 5px 0;
+}
+
+.catalog__li-desc {
+margin-top: 10px;
+font-size: 14px;
+line-height: 1.5;
+color: #666;
+}
+
+.catalog__structure {
+margin-top: 20px;
+border-top: 1px solid #ddd;
+padding-top: 15px;
+}
+
+.catalog__structure-dl {
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+}
+
+.catalog__structure-dt {
+width: 100px;
+font-weight: bold;
+display: flex;
+align-items: center;
+}
+
+.catalog__structure-dt img {
+margin-right: 5px;
+}
+
+.catalog__structure-dd {
+margin-left: 10px;
+}
+
+.vga-icon {
+background-image: url('path/to/vga-icon.png');
+width: 20px;
+height: 20px;
+background-size: cover;
+display: inline-block;
+margin-right: 5px;
+}
+
+.cpu-icon {
+background-image: url('path/to/cpu-icon.png');
+width: 20px;
+height: 20px;
+background-size: cover;
+display: inline-block;
+margin-right: 5px;
+}
+
+.fan-icon {
+background-image: url('path/to/fan-icon.png');
+width: 20px;
+height: 20px;
+background-size: cover;
+display: inline-block;
+margin-right: 5px;
+}
+
+.ram-icon {
+background-image: url('path/to/ram-icon.png');
+width: 20px;
+height: 20px;
+background-size: cover;
+display: inline-block;
+margin-right: 5px;
+}
+
+.motherboard-icon {
+background-image: url('path/to/motherboard-icon.png');
+width: 20px;
+height: 20px;
+background-size: cover;
+display: inline-block;
+margin-right: 5px;
+}
+
+.hdd-icon {
+background-image: url('path/to/hdd-icon.png');
+width: 20px;
+height: 20px;
+background-size: cover;
+display: inline-block;
+margin-right: 5px;
+}
+
+.ssd-icon {
+background-image: url('path/to/ssd-icon.png');
+width: 20px;
+height: 20px;
+background-size: cover;
+display: inline-block;
+margin-right: 5px;
+}
+
+.psu-icon {
+background-image: url('path/to/psu-icon.png');
+width: 20px;
+height: 20px;
+background-size: cover;
+display: inline-block;
+margin-right: 5px;
+}
+
+.case-icon {
+background-image: url('path/to/case-icon.png');
+width: 20px;
+height: 20px;
+background-size: cover;
+display: inline-block;
+margin-right: 5px;
+} */

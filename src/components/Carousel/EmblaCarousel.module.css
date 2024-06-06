@@ -14,6 +14,9 @@
     touch-action: pan-y pinch-zoom;
     margin-left: calc(var(--slide-spacing) * -1);
   }
+  .embla__info{
+    font-size: 30px;
+  }
   .embla__slide {
     flex: 0 0 var(--slide-size);
     min-width: 0;

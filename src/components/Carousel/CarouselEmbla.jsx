@@ -20,7 +20,7 @@ const EmblaCarousel = (props) => {
         <div className={styles.embla__container}>
           {slides.map((slide, index) => (
             <div className={styles.embla__slide} key={index}>
-              {slide} 
+              {slide}
             </div>
           ))}
         </div>
